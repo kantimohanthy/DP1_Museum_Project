@@ -1,0 +1,645 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<m:museum
+    xmlns:m="http://dsti.example/museum">
+
+    <m:metadata>
+        <m:name>European Museum of Cultural Heritage</m:name>
+        <m:country>France</m:country>
+        <m:city>Paris</m:city>
+        <m:established>1885</m:established>
+    </m:metadata>
+
+    <m:historicalPeriods>
+
+        <m:period id="P001">
+            <m:name>Renaissance</m:name>
+            <m:startYear>1400</m:startYear>
+            <m:endYear>1600</m:endYear>
+            <m:description>
+                A major European cultural and artistic period.
+            </m:description>
+        </m:period>
+
+        <m:period id="P002">
+            <m:name>Baroque</m:name>
+            <m:startYear>1600</m:startYear>
+            <m:endYear>1750</m:endYear>
+            <m:description>
+                A European artistic period characterized by dramatic expression.
+            </m:description>
+        </m:period>
+
+        <m:period id="P003">
+            <m:name>Impressionism</m:name>
+            <m:startYear>1860</m:startYear>
+            <m:endYear>1890</m:endYear>
+            <m:description>
+                An artistic movement focused on light, atmosphere and visual perception.
+            </m:description>
+        </m:period>
+
+    </m:historicalPeriods>
+
+    <m:culturalSites>
+
+        <m:site id="S001">
+            <m:name>Florence Historic Centre</m:name>
+            <m:city>Florence</m:city>
+            <m:country>Italy</m:country>
+            <m:description>
+                Historic centre associated with the Italian Renaissance.
+            </m:description>
+        </m:site>
+
+        <m:site id="S002">
+            <m:name>Rome Historic Centre</m:name>
+            <m:city>Rome</m:city>
+            <m:country>Italy</m:country>
+            <m:description>
+                Historic centre containing important Roman and Renaissance heritage.
+            </m:description>
+        </m:site>
+
+        <m:site id="S003">
+            <m:name>Paris Historic District</m:name>
+            <m:city>Paris</m:city>
+            <m:country>France</m:country>
+            <m:description>
+                Historic cultural area containing important European heritage.
+            </m:description>
+        </m:site>
+
+        <m:site id="S004">
+            <m:name>Amsterdam Canal District</m:name>
+            <m:city>Amsterdam</m:city>
+            <m:country>Netherlands</m:country>
+            <m:description>
+                Historic urban area recognized for its cultural and architectural heritage.
+            </m:description>
+        </m:site>
+
+    </m:culturalSites>
+
+    <m:artists>
+
+        <m:artist id="ART001">
+            <m:name>Leonardo da Vinci</m:name>
+            <m:nationality>Italian</m:nationality>
+            <m:birthDate>1452-04-15</m:birthDate>
+            <m:deathDate>1519-05-02</m:deathDate>
+            <m:biography>
+                Italian Renaissance artist, inventor and polymath.
+            </m:biography>
+        </m:artist>
+
+        <m:artist id="ART002">
+            <m:name>Michelangelo Buonarroti</m:name>
+            <m:nationality>Italian</m:nationality>
+            <m:birthDate>1475-03-06</m:birthDate>
+            <m:deathDate>1564-02-18</m:deathDate>
+            <m:biography>
+                Italian Renaissance sculptor, painter and architect.
+            </m:biography>
+        </m:artist>
+
+        <m:artist id="ART003">
+            <m:name>Raphael</m:name>
+            <m:nationality>Italian</m:nationality>
+            <m:birthDate>1483-03-28</m:birthDate>
+            <m:deathDate>1520-04-06</m:deathDate>
+            <m:biography>
+                Italian Renaissance painter and architect.
+            </m:biography>
+        </m:artist>
+
+        <m:artist id="ART004">
+            <m:name>Caravaggio</m:name>
+            <m:nationality>Italian</m:nationality>
+            <m:birthDate>1571-09-29</m:birthDate>
+            <m:deathDate>1610-07-18</m:deathDate>
+            <m:biography>
+                Italian Baroque painter known for dramatic use of light and shadow.
+            </m:biography>
+        </m:artist>
+
+        <m:artist id="ART005">
+            <m:name>Rembrandt van Rijn</m:name>
+            <m:nationality>Dutch</m:nationality>
+            <m:birthDate>1606-07-15</m:birthDate>
+            <m:deathDate>1669-10-04</m:deathDate>
+            <m:biography>
+                Dutch Golden Age painter and printmaker.
+            </m:biography>
+        </m:artist>
+
+        <m:artist id="ART006">
+            <m:name>Claude Monet</m:name>
+            <m:nationality>French</m:nationality>
+            <m:birthDate>1840-11-14</m:birthDate>
+            <m:deathDate>1926-12-05</m:deathDate>
+            <m:biography>
+                French painter and a leading figure of Impressionism.
+            </m:biography>
+        </m:artist>
+
+        <m:artist id="ART007">
+            <m:name>Pierre-Auguste Renoir</m:name>
+            <m:nationality>French</m:nationality>
+            <m:birthDate>1841-02-25</m:birthDate>
+            <m:deathDate>1919-12-03</m:deathDate>
+            <m:biography>
+                French Impressionist painter known for scenes of modern life.
+            </m:biography>
+        </m:artist>
+
+        <m:artist id="ART008">
+            <m:name>Édouard Manet</m:name>
+            <m:nationality>French</m:nationality>
+            <m:birthDate>1832-01-23</m:birthDate>
+            <m:deathDate>1883-04-30</m:deathDate>
+            <m:biography>
+                French painter who played an important role in the transition toward modern art.
+            </m:biography>
+        </m:artist>
+
+    </m:artists>
+
+    <m:curators>
+
+        <m:curator id="CUR001">
+            <m:name>Claire Martin</m:name>
+            <m:specialization>Renaissance Art</m:specialization>
+            <m:nationality>French</m:nationality>
+            <m:email>claire.martin@museum.example</m:email>
+        </m:curator>
+
+        <m:curator id="CUR002">
+            <m:name>Marco Rossi</m:name>
+            <m:specialization>Italian Baroque</m:specialization>
+            <m:nationality>Italian</m:nationality>
+            <m:email>marco.rossi@museum.example</m:email>
+        </m:curator>
+
+        <m:curator id="CUR003">
+            <m:name>Anna de Vries</m:name>
+            <m:specialization>Dutch Golden Age</m:specialization>
+            <m:nationality>Dutch</m:nationality>
+            <m:email>anna.devries@museum.example</m:email>
+        </m:curator>
+
+        <m:curator id="CUR004">
+            <m:name>Julien Bernard</m:name>
+            <m:specialization>Modern European Art</m:specialization>
+            <m:nationality>French</m:nationality>
+            <m:email>julien.bernard@museum.example</m:email>
+        </m:curator>
+
+    </m:curators>
+
+    <m:collections>
+
+        <m:collection id="C001">
+            <m:name>Renaissance Collection</m:name>
+            <m:description>
+                European artworks from the Renaissance period.
+            </m:description>
+            <m:type>Painting</m:type>
+            <m:origin>Italy</m:origin>
+            <m:curatorRef>CUR001</m:curatorRef>
+        </m:collection>
+
+        <m:collection id="C002">
+            <m:name>Baroque Collection</m:name>
+            <m:description>
+                European artworks representing the Baroque tradition.
+            </m:description>
+            <m:type>Painting</m:type>
+            <m:origin>Italy</m:origin>
+            <m:curatorRef>CUR002</m:curatorRef>
+        </m:collection>
+
+        <m:collection id="C003">
+            <m:name>Dutch Masters Collection</m:name>
+            <m:description>
+                Works associated with the Dutch Golden Age.
+            </m:description>
+            <m:type>Painting</m:type>
+            <m:origin>Netherlands</m:origin>
+            <m:curatorRef>CUR003</m:curatorRef>
+        </m:collection>
+
+        <m:collection id="C004">
+            <m:name>French Impressionist Collection</m:name>
+            <m:description>
+                Paintings representing the development of French Impressionism.
+            </m:description>
+            <m:type>Painting</m:type>
+            <m:origin>France</m:origin>
+            <m:curatorRef>CUR004</m:curatorRef>
+        </m:collection>
+
+    </m:collections>
+
+    <m:artifacts>
+
+        <m:artifact id="A001">
+            <m:inventoryNumber>INV-001</m:inventoryNumber>
+            <m:title>Portrait of a Renaissance Lady</m:title>
+            <m:description>
+                A Renaissance portrait representing the artistic traditions of fifteenth-century Italy.
+            </m:description>
+            <m:creationDate>1490</m:creationDate>
+            <m:medium>Oil on wood</m:medium>
+
+            <m:dimensions>
+                <m:height unit="cm">77</m:height>
+                <m:width unit="cm">53</m:width>
+            </m:dimensions>
+
+            <m:acquisition>
+                <m:date>1911-01-15</m:date>
+                <m:method>Purchase</m:method>
+                <m:price currency="EUR">850000</m:price>
+            </m:acquisition>
+
+            <m:artistRef>ART001</m:artistRef>
+            <m:collectionRef>C001</m:collectionRef>
+            <m:historicalPeriodRef>P001</m:historicalPeriodRef>
+            <m:culturalSiteRef>S001</m:culturalSiteRef>
+
+            <m:currentStatus>on_display</m:currentStatus>
+
+            <m:location>
+                <m:building>Main Museum</m:building>
+                <m:gallery>Gallery 1</m:gallery>
+            </m:location>
+        </m:artifact>
+
+        <m:artifact id="A002">
+            <m:inventoryNumber>INV-002</m:inventoryNumber>
+            <m:title>Marble Study</m:title>
+            <m:description>
+                A sculptural study demonstrating the anatomical precision of Renaissance art.
+            </m:description>
+            <m:creationDate>1510</m:creationDate>
+            <m:medium>Marble</m:medium>
+
+            <m:dimensions>
+                <m:height unit="cm">65</m:height>
+                <m:width unit="cm">42</m:width>
+            </m:dimensions>
+
+            <m:acquisition>
+                <m:date>1920-05-12</m:date>
+                <m:method>Donation</m:method>
+                <m:price currency="EUR">0</m:price>
+            </m:acquisition>
+
+            <m:artistRef>ART002</m:artistRef>
+            <m:collectionRef>C001</m:collectionRef>
+            <m:historicalPeriodRef>P001</m:historicalPeriodRef>
+            <m:culturalSiteRef>S002</m:culturalSiteRef>
+
+            <m:currentStatus>on_display</m:currentStatus>
+
+            <m:location>
+                <m:building>Main Museum</m:building>
+                <m:gallery>Gallery 2</m:gallery>
+            </m:location>
+        </m:artifact>
+
+        <m:artifact id="A003">
+            <m:inventoryNumber>INV-003</m:inventoryNumber>
+            <m:title>Madonna and Child</m:title>
+            <m:description>
+                A religious composition characteristic of High Renaissance painting.
+            </m:description>
+            <m:creationDate>1505</m:creationDate>
+            <m:medium>Oil on panel</m:medium>
+
+            <m:dimensions>
+                <m:height unit="cm">110</m:height>
+                <m:width unit="cm">75</m:width>
+            </m:dimensions>
+
+            <m:acquisition>
+                <m:date>1935-03-20</m:date>
+                <m:method>Purchase</m:method>
+                <m:price currency="EUR">1200000</m:price>
+            </m:acquisition>
+
+            <m:artistRef>ART003</m:artistRef>
+            <m:collectionRef>C001</m:collectionRef>
+            <m:historicalPeriodRef>P001</m:historicalPeriodRef>
+            <m:culturalSiteRef>S001</m:culturalSiteRef>
+
+            <m:currentStatus>in_restoration</m:currentStatus>
+
+            <m:location>
+                <m:building>Conservation Centre</m:building>
+                <m:gallery>Restoration Room 1</m:gallery>
+            </m:location>
+        </m:artifact>
+
+        <m:artifact id="A004">
+            <m:inventoryNumber>INV-004</m:inventoryNumber>
+            <m:title>The Calling of Saint Matthew</m:title>
+            <m:description>
+                A dramatic Baroque composition using strong contrasts of light and shadow.
+            </m:description>
+            <m:creationDate>1600</m:creationDate>
+            <m:medium>Oil on canvas</m:medium>
+
+            <m:dimensions>
+                <m:height unit="cm">322</m:height>
+                <m:width unit="cm">340</m:width>
+            </m:dimensions>
+
+            <m:acquisition>
+                <m:date>1952-09-10</m:date>
+                <m:method>Purchase</m:method>
+                <m:price currency="EUR">950000</m:price>
+            </m:acquisition>
+
+            <m:artistRef>ART004</m:artistRef>
+            <m:collectionRef>C002</m:collectionRef>
+            <m:historicalPeriodRef>P002</m:historicalPeriodRef>
+            <m:culturalSiteRef>S002</m:culturalSiteRef>
+
+            <m:currentStatus>on_loan</m:currentStatus>
+
+            <m:location>
+                <m:building>External Institution</m:building>
+                <m:gallery>Rome Partner Museum</m:gallery>
+            </m:location>
+        </m:artifact>
+
+        <m:artifact id="A005">
+            <m:inventoryNumber>INV-005</m:inventoryNumber>
+            <m:title>Portrait of a Merchant</m:title>
+            <m:description>
+                A detailed portrait illustrating the Dutch Golden Age tradition.
+            </m:description>
+            <m:creationDate>1635</m:creationDate>
+            <m:medium>Oil on canvas</m:medium>
+
+            <m:dimensions>
+                <m:height unit="cm">92</m:height>
+                <m:width unit="cm">70</m:width>
+            </m:dimensions>
+
+            <m:acquisition>
+                <m:date>1964-04-18</m:date>
+                <m:method>Purchase</m:method>
+                <m:price currency="EUR">620000</m:price>
+            </m:acquisition>
+
+            <m:artistRef>ART005</m:artistRef>
+            <m:collectionRef>C003</m:collectionRef>
+            <m:historicalPeriodRef>P002</m:historicalPeriodRef>
+            <m:culturalSiteRef>S004</m:culturalSiteRef>
+
+            <m:currentStatus>on_display</m:currentStatus>
+
+            <m:location>
+                <m:building>Main Museum</m:building>
+                <m:gallery>Gallery 5</m:gallery>
+            </m:location>
+        </m:artifact>
+
+        <m:artifact id="A006">
+            <m:inventoryNumber>INV-006</m:inventoryNumber>
+            <m:title>Water Lilies</m:title>
+            <m:description>
+                An Impressionist landscape study focusing on reflections and changing light.
+            </m:description>
+            <m:creationDate>1890</m:creationDate>
+            <m:medium>Oil on canvas</m:medium>
+
+            <m:dimensions>
+                <m:height unit="cm">100</m:height>
+                <m:width unit="cm">150</m:width>
+            </m:dimensions>
+
+            <m:acquisition>
+                <m:date>1972-06-05</m:date>
+                <m:method>Purchase</m:method>
+                <m:price currency="EUR">780000</m:price>
+            </m:acquisition>
+
+            <m:artistRef>ART006</m:artistRef>
+            <m:collectionRef>C004</m:collectionRef>
+            <m:historicalPeriodRef>P003</m:historicalPeriodRef>
+            <m:culturalSiteRef>S003</m:culturalSiteRef>
+
+            <m:currentStatus>on_display</m:currentStatus>
+
+            <m:location>
+                <m:building>Main Museum</m:building>
+                <m:gallery>Gallery 8</m:gallery>
+            </m:location>
+        </m:artifact>
+
+        <m:artifact id="A007">
+            <m:inventoryNumber>INV-007</m:inventoryNumber>
+            <m:title>Dance at Bougival</m:title>
+            <m:description>
+                A lively Impressionist scene depicting modern Parisian social life.
+            </m:description>
+            <m:creationDate>1883</m:creationDate>
+            <m:medium>Oil on canvas</m:medium>
+
+            <m:dimensions>
+                <m:height unit="cm">181</m:height>
+                <m:width unit="cm">100</m:width>
+            </m:dimensions>
+
+            <m:acquisition>
+                <m:date>1981-10-12</m:date>
+                <m:method>Donation</m:method>
+                <m:price currency="EUR">0</m:price>
+            </m:acquisition>
+
+            <m:artistRef>ART007</m:artistRef>
+            <m:collectionRef>C004</m:collectionRef>
+            <m:historicalPeriodRef>P003</m:historicalPeriodRef>
+            <m:culturalSiteRef>S003</m:culturalSiteRef>
+
+            <m:currentStatus>on_display</m:currentStatus>
+
+            <m:location>
+                <m:building>Main Museum</m:building>
+                <m:gallery>Gallery 8</m:gallery>
+            </m:location>
+        </m:artifact>
+
+        <m:artifact id="A008">
+            <m:inventoryNumber>INV-008</m:inventoryNumber>
+            <m:title>Modern Parisian Scene</m:title>
+            <m:description>
+                A nineteenth-century French painting illustrating the transition toward modern art.
+            </m:description>
+            <m:creationDate>1875</m:creationDate>
+            <m:medium>Oil on canvas</m:medium>
+
+            <m:dimensions>
+                <m:height unit="cm">140</m:height>
+                <m:width unit="cm">95</m:width>
+            </m:dimensions>
+
+            <m:acquisition>
+                <m:date>1990-02-14</m:date>
+                <m:method>Purchase</m:method>
+                <m:price currency="EUR">430000</m:price>
+            </m:acquisition>
+
+            <m:artistRef>ART008</m:artistRef>
+            <m:collectionRef>C004</m:collectionRef>
+            <m:historicalPeriodRef>P003</m:historicalPeriodRef>
+            <m:culturalSiteRef>S003</m:culturalSiteRef>
+
+            <m:currentStatus>in_storage</m:currentStatus>
+
+            <m:location>
+                <m:building>Museum Storage</m:building>
+                <m:gallery>Storage Room 3</m:gallery>
+            </m:location>
+        </m:artifact>
+
+    </m:artifacts>
+
+    <m:exhibitions>
+
+        <m:exhibition id="E001">
+            <m:title>Masters of the Renaissance</m:title>
+            <m:description>
+                Renaissance masterpieces from the museum collection.
+            </m:description>
+            <m:startDate>2026-09-01</m:startDate>
+            <m:endDate>2027-01-15</m:endDate>
+            <m:location>Grand Gallery</m:location>
+            <m:curatorRef>CUR001</m:curatorRef>
+            <m:status>active</m:status>
+
+            <m:artifactRef>A001</m:artifactRef>
+            <m:artifactRef>A002</m:artifactRef>
+            <m:artifactRef>A003</m:artifactRef>
+        </m:exhibition>
+
+        <m:exhibition id="E002">
+            <m:title>Light and Shadow</m:title>
+            <m:description>
+                An exhibition exploring the relationship between light and dramatic composition.
+            </m:description>
+            <m:startDate>2026-10-15</m:startDate>
+            <m:endDate>2027-03-30</m:endDate>
+            <m:location>East Wing</m:location>
+            <m:curatorRef>CUR002</m:curatorRef>
+            <m:status>scheduled</m:status>
+
+            <m:artifactRef>A004</m:artifactRef>
+            <m:artifactRef>A005</m:artifactRef>
+        </m:exhibition>
+
+        <m:exhibition id="E003">
+            <m:title>Impressionist Visions</m:title>
+            <m:description>
+                French Impressionist works focusing on light, colour and modern life.
+            </m:description>
+            <m:startDate>2026-11-01</m:startDate>
+            <m:endDate>2027-05-01</m:endDate>
+            <m:location>West Gallery</m:location>
+            <m:curatorRef>CUR004</m:curatorRef>
+            <m:status>scheduled</m:status>
+
+            <m:artifactRef>A006</m:artifactRef>
+            <m:artifactRef>A007</m:artifactRef>
+            <m:artifactRef>A008</m:artifactRef>
+        </m:exhibition>
+
+    </m:exhibitions>
+
+    <m:loans>
+
+        <m:loan id="L001">
+            <m:artifactRef>A004</m:artifactRef>
+            <m:lender>European Museum of Cultural Heritage</m:lender>
+            <m:borrower>Rome Partner Museum</m:borrower>
+            <m:purpose>Temporary Exhibition</m:purpose>
+            <m:startDate>2026-08-15</m:startDate>
+            <m:endDate>2027-02-15</m:endDate>
+            <m:status>active</m:status>
+            <m:insuranceValue currency="EUR">950000</m:insuranceValue>
+        </m:loan>
+
+        <m:loan id="L002">
+            <m:artifactRef>A005</m:artifactRef>
+            <m:lender>European Museum of Cultural Heritage</m:lender>
+            <m:borrower>Amsterdam Museum of Art</m:borrower>
+            <m:purpose>Research and Exhibition</m:purpose>
+            <m:startDate>2026-09-10</m:startDate>
+            <m:endDate>2027-01-10</m:endDate>
+            <m:status>scheduled</m:status>
+            <m:insuranceValue currency="EUR">620000</m:insuranceValue>
+        </m:loan>
+
+        <m:loan id="L003">
+            <m:artifactRef>A006</m:artifactRef>
+            <m:lender>European Museum of Cultural Heritage</m:lender>
+            <m:borrower>Paris Impressionist Centre</m:borrower>
+            <m:purpose>Special Exhibition</m:purpose>
+            <m:startDate>2027-02-01</m:startDate>
+            <m:endDate>2027-06-30</m:endDate>
+            <m:status>scheduled</m:status>
+            <m:insuranceValue currency="EUR">780000</m:insuranceValue>
+        </m:loan>
+
+    </m:loans>
+        <m:conservationRecords>
+
+        <m:conservationRecord id="CR001">
+            <m:artifactRef>A003</m:artifactRef>
+            <m:startDate>2026-01-10</m:startDate>
+            <m:endDate>2026-08-20</m:endDate>
+            <m:type>Restoration</m:type>
+            <m:description>
+                Surface cleaning, structural stabilization and pigment analysis.
+            </m:description>
+            <m:conservator>Elena Moreau</m:conservator>
+            <m:institution>Museum Conservation Centre</m:institution>
+            <m:cost currency="EUR">18500</m:cost>
+            <m:status>completed</m:status>
+        </m:conservationRecord>
+
+        <m:conservationRecord id="CR002">
+            <m:artifactRef>A001</m:artifactRef>
+            <m:startDate>2025-04-12</m:startDate>
+            <m:endDate>2025-06-30</m:endDate>
+            <m:type>Preventive Conservation</m:type>
+            <m:description>
+                Environmental assessment and protective surface treatment.
+            </m:description>
+            <m:conservator>Thomas Leroy</m:conservator>
+            <m:institution>Museum Conservation Centre</m:institution>
+            <m:cost currency="EUR">7200</m:cost>
+            <m:status>completed</m:status>
+        </m:conservationRecord>
+
+        <m:conservationRecord id="CR003">
+            <m:artifactRef>A006</m:artifactRef>
+            <m:startDate>2026-09-15</m:startDate>
+            <m:endDate>2026-12-15</m:endDate>
+            <m:type>Condition Assessment</m:type>
+            <m:description>
+                Detailed examination of canvas condition, pigments and surface stability.
+            </m:description>
+            <m:conservator>Marie Dupont</m:conservator>
+            <m:institution>French Conservation Institute</m:institution>
+            <m:cost currency="EUR">5400</m:cost>
+            <m:status>scheduled</m:status>
+        </m:conservationRecord>
+
+    </m:conservationRecords>
+
+</m:museum>
