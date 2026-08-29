@@ -1,0 +1,129 @@
+
+
+{
+  "artifacts": [
+    
+
+    {
+      "id": "A001",
+      "title": "Portrait of a Renaissance Lady",
+      "year": 1490,
+      "artist": {
+        "id": "ART001",
+        "name": "Leonardo da Vinci"
+      },
+      "collection": {
+        "id": "C001",
+        "name": "Renaissance Collection"
+      },
+      "status": "on_display"
+    },
+
+    {
+      "id": "A002",
+      "title": "Marble Study",
+      "year": 1510,
+      "artist": {
+        "id": "ART002",
+        "name": "Michelangelo Buonarroti"
+      },
+      "collection": {
+        "id": "C001",
+        "name": "Renaissance Collection"
+      },
+      "status": "on_display"
+    },
+
+    {
+      "id": "A003",
+      "title": "Madonna and Child",
+      "year": 1505,
+      "artist": {
+        "id": "ART003",
+        "name": "Raphael"
+      },
+      "collection": {
+        "id": "C001",
+        "name": "Renaissance Collection"
+      },
+      "status": "in_restoration"
+    },
+
+    {
+      "id": "A004",
+      "title": "The Calling of Saint Matthew",
+      "year": 1600,
+      "artist": {
+        "id": "ART004",
+        "name": "Caravaggio"
+      },
+      "collection": {
+        "id": "C002",
+        "name": "Baroque Collection"
+      },
+      "status": "on_loan"
+    },
+
+    {
+      "id": "A005",
+      "title": "Portrait of a Merchant",
+      "year": 1635,
+      "artist": {
+        "id": "ART005",
+        "name": "Rembrandt van Rijn"
+      },
+      "collection": {
+        "id": "C003",
+        "name": "Dutch Masters Collection"
+      },
+      "status": "on_display"
+    },
+
+    {
+      "id": "A006",
+      "title": "Water Lilies",
+      "year": 1890,
+      "artist": {
+        "id": "ART006",
+        "name": "Claude Monet"
+      },
+      "collection": {
+        "id": "C004",
+        "name": "French Impressionist Collection"
+      },
+      "status": "on_display"
+    },
+
+    {
+      "id": "A007",
+      "title": "Dance at Bougival",
+      "year": 1883,
+      "artist": {
+        "id": "ART007",
+        "name": "Pierre-Auguste Renoir"
+      },
+      "collection": {
+        "id": "C004",
+        "name": "French Impressionist Collection"
+      },
+      "status": "on_display"
+    },
+
+    {
+      "id": "A008",
+      "title": "Modern Parisian Scene",
+      "year": 1875,
+      "artist": {
+        "id": "ART008",
+        "name": "Édouard Manet"
+      },
+      "collection": {
+        "id": "C004",
+        "name": "French Impressionist Collection"
+      },
+      "status": "in_storage"
+    }
+  ]
+}
+
+    

@@ -1,0 +1,126 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://dsti.example/museum/artifact-api.schema.json",
+  "title": "Museum Artifact Catalogue API",
+  "description": "Schema for the JSON representation generated from the museum XML database.",
+  "type": "object",
+  "required": [
+    "museum",
+    "artifacts"
+  ],
+  "additionalProperties": false,
+
+  "properties": {
+    "museum": {
+      "type": "object",
+      "required": [
+        "name",
+        "location"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "name": {
+          "type": "string",
+          "minLength": 1
+        },
+        "location": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    },
+
+    "artifacts": {
+      "type": "array",
+      "description": "Museum artifacts represented in the catalogue.",
+      "items": {
+        "$ref": "#/$defs/artifact"
+      }
+    }
+  },
+
+  "$defs": {
+    "artifact": {
+      "type": "object",
+      "required": [
+        "id",
+        "inventoryNumber",
+        "title",
+        "creationDate",
+        "medium",
+        "artist",
+        "collection",
+        "historicalPeriod",
+        "culturalSite",
+        "status",
+        "location",
+        "description"
+      ],
+      "additionalProperties": false,
+
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^A[0-9]{3}$"
+        },
+
+        "inventoryNumber": {
+          "type": "string",
+          "pattern": "^INV-[0-9]{3}$"
+        },
+
+        "title": {
+          "type": "string",
+          "minLength": 1
+        },
+
+        "creationDate": {
+          "type": "string",
+          "minLength": 1
+        },
+
+        "medium": {
+          "type": "string",
+          "minLength": 1
+        },
+
+        "artist": {
+          "type": "string"
+        },
+
+        "collection": {
+          "type": "string",
+          "pattern": "^C[0-9]{3}$"
+        },
+
+        "historicalPeriod": {
+          "type": "string",
+          "pattern": "^P[0-9]{3}$"
+        },
+
+        "culturalSite": {
+          "type": "string",
+          "pattern": "^S[0-9]{3}$"
+        },
+
+        "status": {
+          "type": "string",
+          "enum": [
+            "on_display",
+            "in_storage",
+            "in_restoration",
+            "on_loan"
+          ]
+        },
+
+        "location": {
+          "type": "string"
+        },
+
+        "description": {
+          "type": "string"
+        }
+      }
+    }
+  }
+}

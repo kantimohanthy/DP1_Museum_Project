@@ -1,0 +1,117 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.org/schema/artifact_catalogue.schema.json",
+  "title": "Museum Artifact Catalogue",
+  "description": "Schema for the museum artifact catalogue generated from museum.xml.",
+  "type": "object",
+  "required": [
+    "museum",
+    "artifacts"
+  ],
+  "additionalProperties": false,
+
+  "properties": {
+    "museum": {
+      "type": "object",
+      "required": [
+        "name",
+        "location"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "name": {
+          "type": "string",
+          "minLength": 1
+        },
+        "location": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    },
+
+    "artifacts": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "inventoryNumber",
+          "title",
+          "creationDate",
+          "medium",
+          "artist",
+          "collection",
+          "historicalPeriod",
+          "culturalSite",
+          "status",
+          "location",
+          "description"
+        ],
+        "additionalProperties": false,
+
+        "properties": {
+          "id": {
+            "type": "string",
+            "minLength": 1
+          },
+
+          "inventoryNumber": {
+            "type": "string",
+            "minLength": 1
+          },
+
+          "title": {
+            "type": "string",
+            "minLength": 1
+          },
+
+          "creationDate": {
+            "type": "string",
+            "minLength": 1
+          },
+
+          "medium": {
+            "type": "string",
+            "minLength": 1
+          },
+
+          "artist": {
+            "type": "string"
+          },
+
+          "collection": {
+            "type": "string",
+            "minLength": 1
+          },
+
+          "historicalPeriod": {
+            "type": "string",
+            "minLength": 1
+          },
+
+          "culturalSite": {
+            "type": "string",
+            "minLength": 1
+          },
+
+          "status": {
+            "type": "string",
+            "minLength": 1
+          },
+
+          "location": {
+            "type": "string",
+            "minLength": 1
+          },
+
+          "description": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      }
+    }
+  }
+}

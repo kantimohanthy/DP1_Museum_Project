@@ -2,7 +2,7 @@
 
 <xsl:stylesheet version="1.0"
     xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
-    xmlns:m="http://www.example.org/museum"
+    xmlns:m="http://dsti.example/museum"
     exclude-result-prefixes="m">
 
     <xsl:output method="text" encoding="UTF-8"/>
@@ -11,8 +11,8 @@
 
 {
   "museum": {
-    "name": "<xsl:value-of select="m:museum/m:name"/>",
-    "location": "<xsl:value-of select="m:museum/m:location/m:city"/>, <xsl:value-of select="m:museum/m:location/m:country"/>"
+    "name": "<xsl:value-of select="m:museum/m:metadata/m:name"/>",
+    "location": "<xsl:value-of select="m:museum/m:metadata/m:city"/>, <xsl:value-of select="m:museum/m:metadata/m:country"/>"
   },
   "artifacts": [
     <xsl:for-each select="m:museum/m:artifacts/m:artifact">
@@ -27,7 +27,7 @@
       "historicalPeriod": "<xsl:value-of select="m:historicalPeriodRef"/>",
       "culturalSite": "<xsl:value-of select="m:culturalSiteRef"/>",
       "status": "<xsl:value-of select="m:currentStatus"/>",
-      "location": "<xsl:value-of select="m:location"/>",
+      "location": "<xsl:value-of select="normalize-space(m:location)"/>",
       "description": "<xsl:value-of select="normalize-space(m:description)"/>"
     }<xsl:if test="position() != last()">,</xsl:if>
     </xsl:for-each>

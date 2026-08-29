@@ -1,0 +1,42 @@
+<provenanceCatalog>
+  <artifact id="A001">
+    <inventoryNumber>INV-001</inventoryNumber>
+    <title>Portrait of a Renaissance Lady</title>
+    <provenance/>
+  </artifact>
+  <artifact id="A002">
+    <inventoryNumber>INV-002</inventoryNumber>
+    <title>Marble Study</title>
+    <provenance/>
+  </artifact>
+  <artifact id="A003">
+    <inventoryNumber>INV-003</inventoryNumber>
+    <title>Madonna and Child</title>
+    <provenance/>
+  </artifact>
+  <artifact id="A004">
+    <inventoryNumber>INV-004</inventoryNumber>
+    <title>The Calling of Saint Matthew</title>
+    <provenance/>
+  </artifact>
+  <artifact id="A005">
+    <inventoryNumber>INV-005</inventoryNumber>
+    <title>Portrait of a Merchant</title>
+    <provenance/>
+  </artifact>
+  <artifact id="A006">
+    <inventoryNumber>INV-006</inventoryNumber>
+    <title>Water Lilies</title>
+    <provenance/>
+  </artifact>
+  <artifact id="A007">
+    <inventoryNumber>INV-007</inventoryNumber>
+    <title>Dance at Bougival</title>
+    <provenance/>
+  </artifact>
+  <artifact id="A008">
+    <inventoryNumber>INV-008</inventoryNumber>
+    <title>Modern Parisian Scene</title>
+    <provenance/>
+  </artifact>
+</provenanceCatalog>

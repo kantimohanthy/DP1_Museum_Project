@@ -1,0 +1,65 @@
+
+
+museum:
+  collections:
+    
+
+    - name: "Renaissance Collection"
+      artifact_count: 3
+      artifacts:
+
+
+        - id: "A001"
+          title: "Portrait of a Renaissance Lady"
+          artist: "Leonardo da Vinci"
+          year: 1490
+
+        - id: "A002"
+          title: "Marble Study"
+          artist: "Michelangelo Buonarroti"
+          year: 1510
+
+        - id: "A003"
+          title: "Madonna and Child"
+          artist: "Raphael"
+          year: 1505
+
+    - name: "Baroque Collection"
+      artifact_count: 1
+      artifacts:
+
+
+        - id: "A004"
+          title: "The Calling of Saint Matthew"
+          artist: "Caravaggio"
+          year: 1600
+
+    - name: "Dutch Masters Collection"
+      artifact_count: 1
+      artifacts:
+
+
+        - id: "A005"
+          title: "Portrait of a Merchant"
+          artist: "Rembrandt van Rijn"
+          year: 1635
+
+    - name: "French Impressionist Collection"
+      artifact_count: 3
+      artifacts:
+
+
+        - id: "A006"
+          title: "Water Lilies"
+          artist: "Claude Monet"
+          year: 1890
+
+        - id: "A007"
+          title: "Dance at Bougival"
+          artist: "Pierre-Auguste Renoir"
+          year: 1883
+
+        - id: "A008"
+          title: "Modern Parisian Scene"
+          artist: "Édouard Manet"
+          year: 1875
