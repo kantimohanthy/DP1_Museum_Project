@@ -1,0 +1,269 @@
+{
+  "museum": {
+    "name": "European Museum of Cultural Heritage",
+    "location": "Paris, France",
+    "established": 1885
+  },
+  "domTraversalEngine": "Python xml.dom.minidom (W3C DOM Level 2)",
+  "totalArtifactsProcessed": 8,
+  "artifacts": [
+    {
+      "id": "A001",
+      "inventoryNumber": "INV-001",
+      "title": "Portrait of a Renaissance Lady",
+      "creationDate": "1490",
+      "medium": "Oil on wood",
+      "artist": {
+        "id": "ART001",
+        "name": "Leonardo da Vinci"
+      },
+      "collection": {
+        "id": "C001",
+        "name": "Renaissance Collection"
+      },
+      "period": "Renaissance",
+      "status": "on_display",
+      "location": "Main Museum \u2014 Gallery 1",
+      "provenanceEventsCount": 3,
+      "provenanceHistory": [
+        {
+          "date": "1490",
+          "type": "Commission",
+          "description": "Commissioned by the Duke of Milan for the ducal palace."
+        },
+        {
+          "date": "1798",
+          "type": "Ownership Transfer",
+          "description": "Acquired by private European art collector Viscount Beauchamp."
+        },
+        {
+          "date": "1911-01-15",
+          "type": "Museum Acquisition",
+          "description": "Purchased by the European Museum of Cultural Heritage."
+        }
+      ]
+    },
+    {
+      "id": "A002",
+      "inventoryNumber": "INV-002",
+      "title": "Marble Study",
+      "creationDate": "1510",
+      "medium": "Marble",
+      "artist": {
+        "id": "ART002",
+        "name": "Michelangelo Buonarroti"
+      },
+      "collection": {
+        "id": "C001",
+        "name": "Renaissance Collection"
+      },
+      "period": "Renaissance",
+      "status": "on_display",
+      "location": "Main Museum \u2014 Gallery 2",
+      "provenanceEventsCount": 2,
+      "provenanceHistory": [
+        {
+          "date": "1510",
+          "type": "Creation",
+          "description": "Sculpted in the workshop of Michelangelo Buonarroti."
+        },
+        {
+          "date": "1920-05-12",
+          "type": "Donation",
+          "description": "Bequeathed to the museum by the Rossi Family Estate."
+        }
+      ]
+    },
+    {
+      "id": "A003",
+      "inventoryNumber": "INV-003",
+      "title": "Madonna and Child",
+      "creationDate": "1505",
+      "medium": "Oil on panel",
+      "artist": {
+        "id": "ART003",
+        "name": "Raphael"
+      },
+      "collection": {
+        "id": "C001",
+        "name": "Renaissance Collection"
+      },
+      "period": "Renaissance",
+      "status": "in_restoration",
+      "location": "Conservation Centre \u2014 Restoration Room 1",
+      "provenanceEventsCount": 3,
+      "provenanceHistory": [
+        {
+          "date": "1505",
+          "type": "Commission",
+          "description": "Commissioned for a private chapel in Florence."
+        },
+        {
+          "date": "1850",
+          "type": "Exhibition",
+          "description": "Exhibited at the Royal Academy Summer Exhibition."
+        },
+        {
+          "date": "1935-03-20",
+          "type": "Acquisition",
+          "description": "Purchased at Sotheby's auction by the museum."
+        }
+      ]
+    },
+    {
+      "id": "A004",
+      "inventoryNumber": "INV-004",
+      "title": "The Calling of Saint Matthew",
+      "creationDate": "1600",
+      "medium": "Oil on canvas",
+      "artist": {
+        "id": "ART004",
+        "name": "Caravaggio"
+      },
+      "collection": {
+        "id": "C002",
+        "name": "Baroque Collection"
+      },
+      "period": "Baroque",
+      "status": "on_loan",
+      "location": "External Institution \u2014 Rome Partner Museum",
+      "provenanceEventsCount": 2,
+      "provenanceHistory": [
+        {
+          "date": "1600",
+          "type": "Commission",
+          "description": "Painted for the Contarelli Chapel in San Luigi dei Francesi."
+        },
+        {
+          "date": "1952-09-10",
+          "type": "Acquisition",
+          "description": "Acquired via international cultural exchange agreement."
+        }
+      ]
+    },
+    {
+      "id": "A005",
+      "inventoryNumber": "INV-005",
+      "title": "Portrait of a Merchant",
+      "creationDate": "1635",
+      "medium": "Oil on canvas",
+      "artist": {
+        "id": "ART005",
+        "name": "Rembrandt van Rijn"
+      },
+      "collection": {
+        "id": "C003",
+        "name": "Dutch Masters Collection"
+      },
+      "period": "Baroque",
+      "status": "on_display",
+      "location": "Main Museum \u2014 Gallery 5",
+      "provenanceEventsCount": 2,
+      "provenanceHistory": [
+        {
+          "date": "1635",
+          "type": "Commission",
+          "description": "Commissioned by the Amsterdam Guild of Merchants."
+        },
+        {
+          "date": "1964-04-18",
+          "type": "Acquisition",
+          "description": "Purchased from Van Der Meer Art Collection."
+        }
+      ]
+    },
+    {
+      "id": "A006",
+      "inventoryNumber": "INV-006",
+      "title": "Water Lilies",
+      "creationDate": "1890",
+      "medium": "Oil on canvas",
+      "artist": {
+        "id": "ART006",
+        "name": "Claude Monet"
+      },
+      "collection": {
+        "id": "C004",
+        "name": "French Impressionist Collection"
+      },
+      "period": "Impressionism",
+      "status": "on_display",
+      "location": "Main Museum \u2014 Gallery 8",
+      "provenanceEventsCount": 2,
+      "provenanceHistory": [
+        {
+          "date": "1890",
+          "type": "Creation",
+          "description": "Painted en plein air at Giverny water garden."
+        },
+        {
+          "date": "1972-06-05",
+          "type": "Acquisition",
+          "description": "Acquired directly from Monet family descendants."
+        }
+      ]
+    },
+    {
+      "id": "A007",
+      "inventoryNumber": "INV-007",
+      "title": "Dance at Bougival",
+      "creationDate": "1883",
+      "medium": "Oil on canvas",
+      "artist": {
+        "id": "ART007",
+        "name": "Pierre-Auguste Renoir"
+      },
+      "collection": {
+        "id": "C004",
+        "name": "French Impressionist Collection"
+      },
+      "period": "Impressionism",
+      "status": "on_display",
+      "location": "Main Museum \u2014 Gallery 8",
+      "provenanceEventsCount": 2,
+      "provenanceHistory": [
+        {
+          "date": "1883",
+          "type": "Creation",
+          "description": "Painted for Paul Durand-Ruel exhibition."
+        },
+        {
+          "date": "1981-10-12",
+          "type": "Donation",
+          "description": "Donated by the French Cultural Heritage Foundation."
+        }
+      ]
+    },
+    {
+      "id": "A008",
+      "inventoryNumber": "INV-008",
+      "title": "Modern Parisian Scene",
+      "creationDate": "1875",
+      "medium": "Oil on canvas",
+      "artist": {
+        "id": "ART008",
+        "name": "\u00c9douard Manet"
+      },
+      "collection": {
+        "id": "C004",
+        "name": "French Impressionist Collection"
+      },
+      "period": "Impressionism",
+      "status": "in_storage",
+      "location": "Museum Storage \u2014 Storage Room 3",
+      "provenanceEventsCount": 2,
+      "provenanceHistory": [
+        {
+          "date": "1875",
+          "type": "Creation",
+          "description": "Exhibited at the Impressionist Exhibition of 1876."
+        },
+        {
+          "date": "1990-02-14",
+          "type": "Acquisition",
+          "description": "Purchased from private Parisian estate."
+        }
+      ]
+    }
+  ]
+}

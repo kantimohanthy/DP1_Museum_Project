@@ -1,78 +1,59 @@
+<!DOCTYPE html SYSTEM "about:legacy-compat">
 <html>
   <head>
-    <title>Artist Explorer</title>
     <meta charset="UTF-8"/>
+    <title>Artist Explorer</title>
+    <style>
+                    body { font-family: 'Segoe UI', Arial, sans-serif; margin: 30px; background: #f8fafc; color: #1e293b; }
+                    h1 { color: #0f172a; border-bottom: 3px solid #0284c7; padding-bottom: 8px; }
+                    .artist-card { background: #fff; border: 1px solid #e2e8f0; border-radius: 8px; padding: 20px; margin-bottom: 20px; box-shadow: 0 1px 3px rgba(0,0,0,0.05); }
+                    .artist-name { margin: 0 0 10px 0; color: #0369a1; }
+                    .meta { color: #64748b; font-size: 0.95em; margin-bottom: 12px; }
+                    .bio { line-height: 1.6; }
+                    .count-pill { display: inline-block; background: #e0f2fe; color: #0369a1; padding: 4px 12px; border-radius: 15px; font-weight: bold; font-size: 0.9em; }
+                </style>
   </head>
   <body>
-    <h1>Artist Explorer</h1>
-    <table border="1">
-      <thead>
-        <tr>
-          <th>Artist</th>
-          <th>Nationality</th>
-          <th>Birth Date</th>
-          <th>Death Date</th>
-          <th>Works in Museum</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>Caravaggio</td>
-          <td>Italian</td>
-          <td>1571-09-29</td>
-          <td>1610-07-18</td>
-          <td>1</td>
-        </tr>
-        <tr>
-          <td>Claude Monet</td>
-          <td>French</td>
-          <td>1840-11-14</td>
-          <td>1926-12-05</td>
-          <td>1</td>
-        </tr>
-        <tr>
-          <td>Leonardo da Vinci</td>
-          <td>Italian</td>
-          <td>1452-04-15</td>
-          <td>1519-05-02</td>
-          <td>1</td>
-        </tr>
-        <tr>
-          <td>Michelangelo Buonarroti</td>
-          <td>Italian</td>
-          <td>1475-03-06</td>
-          <td>1564-02-18</td>
-          <td>1</td>
-        </tr>
-        <tr>
-          <td>Pierre-Auguste Renoir</td>
-          <td>French</td>
-          <td>1841-02-25</td>
-          <td>1919-12-03</td>
-          <td>1</td>
-        </tr>
-        <tr>
-          <td>Raphael</td>
-          <td>Italian</td>
-          <td>1483-03-28</td>
-          <td>1520-04-06</td>
-          <td>1</td>
-        </tr>
-        <tr>
-          <td>Rembrandt van Rijn</td>
-          <td>Dutch</td>
-          <td>1606-07-15</td>
-          <td>1669-10-04</td>
-          <td>1</td>
-        </tr>
-        <tr>
-          <td>Édouard Manet</td>
-          <td>French</td>
-          <td>1832-01-23</td>
-          <td>1883-04-30</td>
-          <td>1</td>
-        </tr>
-      </tbody>
-    </table>
+    <h1>Museum Artists &amp; Biographical Explorer</h1>
+    <article class="artist-card">
+      <h2 class="artist-name">Caravaggio</h2>
+      <div class="meta"><strong>Nationality:</strong>Italian | <strong>Lifespan:</strong>1571-09-29 — 1610-07-18 | <span class="count-pill">1 Work(s) in Museum</span></div>
+      <p class="bio">Italian Baroque painter known for dramatic use of light and shadow.</p>
+    </article>
+    <article class="artist-card">
+      <h2 class="artist-name">Claude Monet</h2>
+      <div class="meta"><strong>Nationality:</strong>French | <strong>Lifespan:</strong>1840-11-14 — 1926-12-05 | <span class="count-pill">1 Work(s) in Museum</span></div>
+      <p class="bio">French painter and a leading figure of Impressionism.</p>
+    </article>
+    <article class="artist-card">
+      <h2 class="artist-name">Leonardo da Vinci</h2>
+      <div class="meta"><strong>Nationality:</strong>Italian | <strong>Lifespan:</strong>1452-04-15 — 1519-05-02 | <span class="count-pill">1 Work(s) in Museum</span></div>
+      <p class="bio">Italian Renaissance artist, inventor and polymath.</p>
+    </article>
+    <article class="artist-card">
+      <h2 class="artist-name">Michelangelo Buonarroti</h2>
+      <div class="meta"><strong>Nationality:</strong>Italian | <strong>Lifespan:</strong>1475-03-06 — 1564-02-18 | <span class="count-pill">1 Work(s) in Museum</span></div>
+      <p class="bio">Italian Renaissance sculptor, painter and architect.</p>
+    </article>
+    <article class="artist-card">
+      <h2 class="artist-name">Pierre-Auguste Renoir</h2>
+      <div class="meta"><strong>Nationality:</strong>French | <strong>Lifespan:</strong>1841-02-25 — 1919-12-03 | <span class="count-pill">1 Work(s) in Museum</span></div>
+      <p class="bio">French Impressionist painter known for scenes of modern life.</p>
+    </article>
+    <article class="artist-card">
+      <h2 class="artist-name">Raphael</h2>
+      <div class="meta"><strong>Nationality:</strong>Italian | <strong>Lifespan:</strong>1483-03-28 — 1520-04-06 | <span class="count-pill">1 Work(s) in Museum</span></div>
+      <p class="bio">Italian Renaissance painter and architect.</p>
+    </article>
+    <article class="artist-card">
+      <h2 class="artist-name">Rembrandt van Rijn</h2>
+      <div class="meta"><strong>Nationality:</strong>Dutch | <strong>Lifespan:</strong>1606-07-15 — 1669-10-04 | <span class="count-pill">1 Work(s) in Museum</span></div>
+      <p class="bio">Dutch Golden Age painter and printmaker.</p>
+    </article>
+    <article class="artist-card">
+      <h2 class="artist-name">Édouard Manet</h2>
+      <div class="meta"><strong>Nationality:</strong>French | <strong>Lifespan:</strong>1832-01-23 — 1883-04-30 | <span class="count-pill">1 Work(s) in Museum</span></div>
+      <p class="bio">French painter who played an important role in the transition toward modern art.</p>
+    </article>
   </body>
 </html>

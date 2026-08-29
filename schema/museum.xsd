@@ -220,6 +220,35 @@
     </xs:complexType>
 
     <!-- =========================================================
+         PROVENANCE
+         ========================================================= -->
+
+    <xs:complexType name="ProvenanceEventType">
+        <xs:annotation>
+            <xs:documentation>
+                Represents a historical ownership transfer, exhibition, or acquisition event in an artifact's provenance chain.
+            </xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="date" type="xs:string"/>
+            <xs:element name="type" type="xs:string"/>
+            <xs:element name="description" type="xs:string"/>
+            <xs:element name="location" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="ProvenanceType">
+        <xs:annotation>
+            <xs:documentation>
+                Container for historical provenance events associated with a cultural artifact.
+            </xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="event" type="m:ProvenanceEventType" minOccurs="0" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <!-- =========================================================
          ARTIFACT
          ========================================================= -->
 
@@ -259,6 +288,10 @@
 
             <xs:element name="location"
                         type="m:LocationType"/>
+
+            <xs:element name="provenance"
+                        type="m:ProvenanceType"
+                        minOccurs="0"/>
 
         </xs:sequence>
 

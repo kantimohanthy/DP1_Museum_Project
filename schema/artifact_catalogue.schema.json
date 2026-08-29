@@ -1,21 +1,21 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://example.org/schema/artifact_catalogue.schema.json",
-  "title": "Museum Artifact Catalogue",
-  "description": "Schema for the museum artifact catalogue generated from museum.xml.",
+  "title": "Museum Artifact Catalogue API Schema",
+  "description": "JSON Schema validating the JSON REST API payload generated from the museum XML database by XSLT Scenario 09.",
   "type": "object",
   "required": [
     "museum",
     "artifacts"
   ],
   "additionalProperties": false,
-
   "properties": {
     "museum": {
       "type": "object",
       "required": [
         "name",
-        "location"
+        "location",
+        "established"
       ],
       "additionalProperties": false,
       "properties": {
@@ -26,90 +26,110 @@
         "location": {
           "type": "string",
           "minLength": 1
+        },
+        "established": {
+          "type": "integer",
+          "minimum": 1000,
+          "maximum": 2100
         }
       }
     },
-
     "artifacts": {
       "type": "array",
       "minItems": 1,
       "items": {
-        "type": "object",
-        "required": [
-          "id",
-          "inventoryNumber",
-          "title",
-          "creationDate",
-          "medium",
-          "artist",
-          "collection",
-          "historicalPeriod",
-          "culturalSite",
-          "status",
-          "location",
-          "description"
-        ],
-        "additionalProperties": false,
-
-        "properties": {
-          "id": {
-            "type": "string",
-            "minLength": 1
-          },
-
-          "inventoryNumber": {
-            "type": "string",
-            "minLength": 1
-          },
-
-          "title": {
-            "type": "string",
-            "minLength": 1
-          },
-
-          "creationDate": {
-            "type": "string",
-            "minLength": 1
-          },
-
-          "medium": {
-            "type": "string",
-            "minLength": 1
-          },
-
-          "artist": {
-            "type": "string"
-          },
-
-          "collection": {
-            "type": "string",
-            "minLength": 1
-          },
-
-          "historicalPeriod": {
-            "type": "string",
-            "minLength": 1
-          },
-
-          "culturalSite": {
-            "type": "string",
-            "minLength": 1
-          },
-
-          "status": {
-            "type": "string",
-            "minLength": 1
-          },
-
-          "location": {
-            "type": "string",
-            "minLength": 1
-          },
-
-          "description": {
-            "type": "string",
-            "minLength": 1
+        "$ref": "#/$defs/artifact"
+      }
+    }
+  },
+  "$defs": {
+    "artifact": {
+      "type": "object",
+      "required": [
+        "id",
+        "inventoryNumber",
+        "title",
+        "creationYear",
+        "medium",
+        "artist",
+        "collection",
+        "period",
+        "status",
+        "location"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^A[0-9]{3}$"
+        },
+        "inventoryNumber": {
+          "type": "string",
+          "pattern": "^INV-[0-9]{3}$"
+        },
+        "title": {
+          "type": "string",
+          "minLength": 1
+        },
+        "creationYear": {
+          "type": "integer"
+        },
+        "medium": {
+          "type": "string",
+          "minLength": 1
+        },
+        "artist": {
+          "type": "object",
+          "required": [
+            "id",
+            "name"
+          ],
+          "additionalProperties": false,
+          "properties": {
+            "id": {
+              "type": "string",
+              "pattern": "^ART[0-9]{3}$"
+            },
+            "name": {
+              "type": "string",
+              "minLength": 1
+            }
           }
+        },
+        "collection": {
+          "type": "object",
+          "required": [
+            "id",
+            "name"
+          ],
+          "additionalProperties": false,
+          "properties": {
+            "id": {
+              "type": "string",
+              "pattern": "^C[0-9]{3}$"
+            },
+            "name": {
+              "type": "string",
+              "minLength": 1
+            }
+          }
+        },
+        "period": {
+          "type": "string",
+          "minLength": 1
+        },
+        "status": {
+          "type": "string",
+          "enum": [
+            "on_display",
+            "in_storage",
+            "in_restoration",
+            "on_loan"
+          ]
+        },
+        "location": {
+          "type": "string",
+          "minLength": 1
         }
       }
     }

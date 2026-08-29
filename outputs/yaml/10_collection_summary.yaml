@@ -1,65 +1,88 @@
 
-
+# DP1 Museum Platform - Collection Summary Configuration
 museum:
+  name: "European Museum of Cultural Heritage"
+  location: "Paris, France"
+  total_collections: 4
   collections:
-    
 
-    - name: "Renaissance Collection"
+
+    - collection_id: "C001"
+      name: "Renaissance Collection"
+      type: "Painting"
+      curator: "Claire Martin"
       artifact_count: 3
       artifacts:
-
 
         - id: "A001"
           title: "Portrait of a Renaissance Lady"
           artist: "Leonardo da Vinci"
           year: 1490
-
+          status: "on_display"
+    
         - id: "A002"
           title: "Marble Study"
           artist: "Michelangelo Buonarroti"
           year: 1510
-
+          status: "on_display"
+    
         - id: "A003"
           title: "Madonna and Child"
           artist: "Raphael"
           year: 1505
+          status: "in_restoration"
+    
 
-    - name: "Baroque Collection"
+    - collection_id: "C002"
+      name: "Baroque Collection"
+      type: "Painting"
+      curator: "Marco Rossi"
       artifact_count: 1
       artifacts:
-
 
         - id: "A004"
           title: "The Calling of Saint Matthew"
           artist: "Caravaggio"
           year: 1600
+          status: "on_loan"
+    
 
-    - name: "Dutch Masters Collection"
+    - collection_id: "C003"
+      name: "Dutch Masters Collection"
+      type: "Painting"
+      curator: "Anna de Vries"
       artifact_count: 1
       artifacts:
-
 
         - id: "A005"
           title: "Portrait of a Merchant"
           artist: "Rembrandt van Rijn"
           year: 1635
+          status: "on_display"
+    
 
-    - name: "French Impressionist Collection"
+    - collection_id: "C004"
+      name: "French Impressionist Collection"
+      type: "Painting"
+      curator: "Julien Bernard"
       artifact_count: 3
       artifacts:
-
 
         - id: "A006"
           title: "Water Lilies"
           artist: "Claude Monet"
           year: 1890
-
+          status: "on_display"
+    
         - id: "A007"
           title: "Dance at Bougival"
           artist: "Pierre-Auguste Renoir"
           year: 1883
-
+          status: "on_display"
+    
         - id: "A008"
           title: "Modern Parisian Scene"
           artist: "Édouard Manet"
           year: 1875
+          status: "in_storage"
+    

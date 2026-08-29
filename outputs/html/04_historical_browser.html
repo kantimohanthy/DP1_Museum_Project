@@ -1,9 +1,161 @@
+<!DOCTYPE html SYSTEM "about:legacy-compat">
 <html>
   <head>
-    <title>Historical Collection Browser</title>
     <meta charset="UTF-8"/>
+    <title>Historical Collection Browser</title>
+    <style>
+                    body { font-family: 'Segoe UI', Arial, sans-serif; margin: 30px; background: #fdfdfd; color: #2c3e50; }
+                    h1 { color: #2c3e50; border-bottom: 3px solid #8e44ad; padding-bottom: 8px; }
+                    .period-section { background: #fff; border: 1px solid #e1e8ed; border-radius: 8px; margin-bottom: 30px; padding: 25px; box-shadow: 0 2px 6px rgba(0,0,0,0.04); }
+                    .period-header { color: #8e44ad; margin-top: 0; }
+                    .period-dates { color: #7f8c8d; font-weight: bold; }
+                    table { width: 100%; border-collapse: collapse; margin-top: 15px; }
+                    th, td { padding: 10px 12px; border: 1px solid #ecf0f1; text-align: left; }
+                    th { background: #f4ecf7; color: #6c3483; }
+                    tr:nth-child(even) { background: #faf5fc; }
+                </style>
   </head>
   <body>
     <h1>Historical Collection Browser</h1>
+    <p>Browse museum holdings organized by cultural and historical movements.</p>
+    <section class="period-section">
+      <h2 class="period-header">Renaissance <span class="period-dates">(1400 – 1600)</span></h2>
+      <p>A major European cultural and artistic period.</p>
+      <table>
+        <thead>
+          <tr>
+            <th>Inventory #</th>
+            <th>Artifact Title</th>
+            <th>Artist</th>
+            <th>Collection</th>
+            <th>Creation Year</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <code>INV-001</code>
+            </td>
+            <td>
+              <strong>Portrait of a Renaissance Lady</strong>
+            </td>
+            <td>Leonardo da Vinci</td>
+            <td>Renaissance Collection</td>
+            <td>1490</td>
+          </tr>
+          <tr>
+            <td>
+              <code>INV-003</code>
+            </td>
+            <td>
+              <strong>Madonna and Child</strong>
+            </td>
+            <td>Raphael</td>
+            <td>Renaissance Collection</td>
+            <td>1505</td>
+          </tr>
+          <tr>
+            <td>
+              <code>INV-002</code>
+            </td>
+            <td>
+              <strong>Marble Study</strong>
+            </td>
+            <td>Michelangelo Buonarroti</td>
+            <td>Renaissance Collection</td>
+            <td>1510</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+    <section class="period-section">
+      <h2 class="period-header">Baroque <span class="period-dates">(1600 – 1750)</span></h2>
+      <p>A European artistic period characterized by dramatic expression.</p>
+      <table>
+        <thead>
+          <tr>
+            <th>Inventory #</th>
+            <th>Artifact Title</th>
+            <th>Artist</th>
+            <th>Collection</th>
+            <th>Creation Year</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <code>INV-004</code>
+            </td>
+            <td>
+              <strong>The Calling of Saint Matthew</strong>
+            </td>
+            <td>Caravaggio</td>
+            <td>Baroque Collection</td>
+            <td>1600</td>
+          </tr>
+          <tr>
+            <td>
+              <code>INV-005</code>
+            </td>
+            <td>
+              <strong>Portrait of a Merchant</strong>
+            </td>
+            <td>Rembrandt van Rijn</td>
+            <td>Dutch Masters Collection</td>
+            <td>1635</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+    <section class="period-section">
+      <h2 class="period-header">Impressionism <span class="period-dates">(1860 – 1890)</span></h2>
+      <p>An artistic movement focused on light, atmosphere and visual perception.</p>
+      <table>
+        <thead>
+          <tr>
+            <th>Inventory #</th>
+            <th>Artifact Title</th>
+            <th>Artist</th>
+            <th>Collection</th>
+            <th>Creation Year</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <code>INV-008</code>
+            </td>
+            <td>
+              <strong>Modern Parisian Scene</strong>
+            </td>
+            <td>Édouard Manet</td>
+            <td>French Impressionist Collection</td>
+            <td>1875</td>
+          </tr>
+          <tr>
+            <td>
+              <code>INV-007</code>
+            </td>
+            <td>
+              <strong>Dance at Bougival</strong>
+            </td>
+            <td>Pierre-Auguste Renoir</td>
+            <td>French Impressionist Collection</td>
+            <td>1883</td>
+          </tr>
+          <tr>
+            <td>
+              <code>INV-006</code>
+            </td>
+            <td>
+              <strong>Water Lilies</strong>
+            </td>
+            <td>Claude Monet</td>
+            <td>French Impressionist Collection</td>
+            <td>1890</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
   </body>
 </html>

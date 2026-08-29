@@ -1,21 +1,21 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://dsti.example/museum/artifact-api.schema.json",
-  "title": "Museum Artifact Catalogue API",
-  "description": "Schema for the JSON representation generated from the museum XML database.",
+  "title": "Museum Artifact Catalogue API Schema",
+  "description": "JSON Schema validating the JSON REST API payload generated from the museum XML database by XSLT Scenario 09.",
   "type": "object",
   "required": [
     "museum",
     "artifacts"
   ],
   "additionalProperties": false,
-
   "properties": {
     "museum": {
       "type": "object",
       "required": [
         "name",
-        "location"
+        "location",
+        "established"
       ],
       "additionalProperties": false,
       "properties": {
@@ -26,19 +26,22 @@
         "location": {
           "type": "string",
           "minLength": 1
+        },
+        "established": {
+          "type": "integer",
+          "minimum": 1000,
+          "maximum": 2100
         }
       }
     },
-
     "artifacts": {
       "type": "array",
-      "description": "Museum artifacts represented in the catalogue.",
+      "minItems": 1,
       "items": {
         "$ref": "#/$defs/artifact"
       }
     }
   },
-
   "$defs": {
     "artifact": {
       "type": "object",
@@ -46,63 +49,75 @@
         "id",
         "inventoryNumber",
         "title",
-        "creationDate",
+        "creationYear",
         "medium",
         "artist",
         "collection",
-        "historicalPeriod",
-        "culturalSite",
+        "period",
         "status",
-        "location",
-        "description"
+        "location"
       ],
       "additionalProperties": false,
-
       "properties": {
         "id": {
           "type": "string",
           "pattern": "^A[0-9]{3}$"
         },
-
         "inventoryNumber": {
           "type": "string",
           "pattern": "^INV-[0-9]{3}$"
         },
-
         "title": {
           "type": "string",
           "minLength": 1
         },
-
-        "creationDate": {
-          "type": "string",
-          "minLength": 1
+        "creationYear": {
+          "type": "integer"
         },
-
         "medium": {
           "type": "string",
           "minLength": 1
         },
-
         "artist": {
-          "type": "string"
+          "type": "object",
+          "required": [
+            "id",
+            "name"
+          ],
+          "additionalProperties": false,
+          "properties": {
+            "id": {
+              "type": "string",
+              "pattern": "^ART[0-9]{3}$"
+            },
+            "name": {
+              "type": "string",
+              "minLength": 1
+            }
+          }
         },
-
         "collection": {
-          "type": "string",
-          "pattern": "^C[0-9]{3}$"
+          "type": "object",
+          "required": [
+            "id",
+            "name"
+          ],
+          "additionalProperties": false,
+          "properties": {
+            "id": {
+              "type": "string",
+              "pattern": "^C[0-9]{3}$"
+            },
+            "name": {
+              "type": "string",
+              "minLength": 1
+            }
+          }
         },
-
-        "historicalPeriod": {
+        "period": {
           "type": "string",
-          "pattern": "^P[0-9]{3}$"
+          "minLength": 1
         },
-
-        "culturalSite": {
-          "type": "string",
-          "pattern": "^S[0-9]{3}$"
-        },
-
         "status": {
           "type": "string",
           "enum": [
@@ -112,13 +127,9 @@
             "on_loan"
           ]
         },
-
         "location": {
-          "type": "string"
-        },
-
-        "description": {
-          "type": "string"
+          "type": "string",
+          "minLength": 1
         }
       }
     }

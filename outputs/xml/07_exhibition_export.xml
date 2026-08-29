@@ -1,46 +1,89 @@
-<exhibitionCatalog>
-  <exhibition id="E001">
-    <title>Masters of the Renaissance</title>
-    <dates>
-      <start>2026-09-01</start>
-      <end>2027-01-15</end>
-    </dates>
-    <curator>CUR001</curator>
-    <location>Grand Gallery</location>
-    <status>active</status>
-    <artifacts>
-      <artifact>A001</artifact>
-      <artifact>A002</artifact>
-      <artifact>A003</artifact>
-    </artifacts>
-  </exhibition>
-  <exhibition id="E002">
-    <title>Light and Shadow</title>
-    <dates>
-      <start>2026-10-15</start>
-      <end>2027-03-30</end>
-    </dates>
-    <curator>CUR002</curator>
-    <location>East Wing</location>
-    <status>scheduled</status>
-    <artifacts>
-      <artifact>A004</artifact>
-      <artifact>A005</artifact>
-    </artifacts>
-  </exhibition>
-  <exhibition id="E003">
-    <title>Impressionist Visions</title>
-    <dates>
-      <start>2026-11-01</start>
-      <end>2027-05-01</end>
-    </dates>
-    <curator>CUR004</curator>
-    <location>West Gallery</location>
-    <status>scheduled</status>
-    <artifacts>
-      <artifact>A006</artifact>
-      <artifact>A007</artifact>
-      <artifact>A008</artifact>
-    </artifacts>
-  </exhibition>
-</exhibitionCatalog>
+<exhibitionExportCatalogue>
+  <exportMetadata>
+    <sourceMuseum>European Museum of Cultural Heritage</sourceMuseum>
+    <location>Paris, France</location>
+    <totalExhibitions>3</totalExhibitions>
+  </exportMetadata>
+  <exhibitions>
+    <exhibition id="E001">
+      <title>Masters of the Renaissance</title>
+      <description>Renaissance masterpieces from the museum collection.</description>
+      <schedule>
+        <startDate>2026-09-01</startDate>
+        <endDate>2027-01-15</endDate>
+      </schedule>
+      <curator>
+        <name>Claire Martin</name>
+        <specialization>Renaissance Art</specialization>
+      </curator>
+      <location>Grand Gallery</location>
+      <status>active</status>
+      <featuredArtifacts>
+        <artifact id="A001">
+          <title>Portrait of a Renaissance Lady</title>
+          <medium>Oil on wood</medium>
+        </artifact>
+        <artifact id="A002">
+          <title>Marble Study</title>
+          <medium>Marble</medium>
+        </artifact>
+        <artifact id="A003">
+          <title>Madonna and Child</title>
+          <medium>Oil on panel</medium>
+        </artifact>
+      </featuredArtifacts>
+    </exhibition>
+    <exhibition id="E002">
+      <title>Light and Shadow</title>
+      <description>An exhibition exploring the relationship between light and dramatic composition.</description>
+      <schedule>
+        <startDate>2026-10-15</startDate>
+        <endDate>2027-03-30</endDate>
+      </schedule>
+      <curator>
+        <name>Marco Rossi</name>
+        <specialization>Italian Baroque</specialization>
+      </curator>
+      <location>East Wing</location>
+      <status>scheduled</status>
+      <featuredArtifacts>
+        <artifact id="A004">
+          <title>The Calling of Saint Matthew</title>
+          <medium>Oil on canvas</medium>
+        </artifact>
+        <artifact id="A005">
+          <title>Portrait of a Merchant</title>
+          <medium>Oil on canvas</medium>
+        </artifact>
+      </featuredArtifacts>
+    </exhibition>
+    <exhibition id="E003">
+      <title>Impressionist Visions</title>
+      <description>French Impressionist works focusing on light, colour and modern life.</description>
+      <schedule>
+        <startDate>2026-11-01</startDate>
+        <endDate>2027-05-01</endDate>
+      </schedule>
+      <curator>
+        <name>Julien Bernard</name>
+        <specialization>Modern European Art</specialization>
+      </curator>
+      <location>West Gallery</location>
+      <status>scheduled</status>
+      <featuredArtifacts>
+        <artifact id="A006">
+          <title>Water Lilies</title>
+          <medium>Oil on canvas</medium>
+        </artifact>
+        <artifact id="A007">
+          <title>Dance at Bougival</title>
+          <medium>Oil on canvas</medium>
+        </artifact>
+        <artifact id="A008">
+          <title>Modern Parisian Scene</title>
+          <medium>Oil on canvas</medium>
+        </artifact>
+      </featuredArtifacts>
+    </exhibition>
+  </exhibitions>
+</exhibitionExportCatalogue>

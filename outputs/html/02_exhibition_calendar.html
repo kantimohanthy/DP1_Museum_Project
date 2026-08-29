@@ -1,46 +1,80 @@
+<!DOCTYPE html SYSTEM "about:legacy-compat">
 <html>
   <head>
-    <title>Exhibition Calendar</title>
     <meta charset="UTF-8"/>
+    <title>Museum Exhibition Calendar</title>
+    <style>
+                    body { font-family: 'Segoe UI', Arial, sans-serif; margin: 30px; background: #fafafa; color: #2c3e50; }
+                    h1 { color: #1a252f; border-bottom: 3px solid #3498db; padding-bottom: 8px; }
+                    table { width: 100%; border-collapse: collapse; margin-top: 20px; background: #fff; box-shadow: 0 2px 5px rgba(0,0,0,0.05); }
+                    th, td { padding: 12px 15px; border: 1px solid #e2e8f0; text-align: left; }
+                    th { background: #34495e; color: #fff; font-weight: 600; }
+                    tr:nth-child(even) { background: #f8fafc; }
+                    .badge { display: inline-block; padding: 3px 8px; border-radius: 4px; font-size: 0.85em; font-weight: bold; }
+                    .badge-active { background: #2ecc71; color: #fff; }
+                    .badge-scheduled { background: #f39c12; color: #fff; }
+                </style>
   </head>
   <body>
-    <h1>Exhibition Calendar</h1>
-    <p><strong>Museum:</strong>European Museum of Cultural Heritage</p>
-    <table border="1">
+    <h1>Exhibition Schedule &amp; Calendar</h1>
+    <p><strong>Institution:</strong>European Museum of Cultural Heritage</p>
+    <table>
       <thead>
         <tr>
-          <th>Exhibition</th>
+          <th>Exhibition Title</th>
           <th>Start Date</th>
           <th>End Date</th>
           <th>Curator</th>
           <th>Location</th>
-          <th>Artifact Count</th>
+          <th>Status</th>
+          <th>Featured Artifacts</th>
         </tr>
       </thead>
       <tbody>
         <tr>
-          <td>Masters of the Renaissance</td>
+          <td>
+            <strong>Masters of the Renaissance</strong>
+            <br/>
+            <small>Renaissance masterpieces from the museum collection.</small>
+          </td>
           <td>2026-09-01</td>
           <td>2027-01-15</td>
-          <td>CUR001</td>
+          <td>Claire Martin (Renaissance Art)</td>
           <td>Grand Gallery</td>
-          <td>3</td>
+          <td>
+            <span class="badge badge-active">active</span>
+          </td>
+          <td>3 Artifact(s)</td>
         </tr>
         <tr>
-          <td>Light and Shadow</td>
+          <td>
+            <strong>Light and Shadow</strong>
+            <br/>
+            <small>An exhibition exploring the relationship between light and dramatic composition.</small>
+          </td>
           <td>2026-10-15</td>
           <td>2027-03-30</td>
-          <td>CUR002</td>
+          <td>Marco Rossi (Italian Baroque)</td>
           <td>East Wing</td>
-          <td>2</td>
+          <td>
+            <span class="badge badge-scheduled">scheduled</span>
+          </td>
+          <td>2 Artifact(s)</td>
         </tr>
         <tr>
-          <td>Impressionist Visions</td>
+          <td>
+            <strong>Impressionist Visions</strong>
+            <br/>
+            <small>French Impressionist works focusing on light, colour and modern life.</small>
+          </td>
           <td>2026-11-01</td>
           <td>2027-05-01</td>
-          <td>CUR004</td>
+          <td>Julien Bernard (Modern European Art)</td>
           <td>West Gallery</td>
-          <td>3</td>
+          <td>
+            <span class="badge badge-scheduled">scheduled</span>
+          </td>
+          <td>3 Artifact(s)</td>
         </tr>
       </tbody>
     </table>

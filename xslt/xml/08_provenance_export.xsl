@@ -1,12 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <!--
-    XML Scenario 08: Provenance Export
+    ===================================================================
+    S26 Data Pipeline Project - XSLT Stylesheet 08 (XML)
+    Scenario: Artifact Provenance Timeline Export
+    ===================================================================
+    Description:
+    This stylesheet extracts the historical provenance chain of all museum artifacts 
+    and transforms it into a specialized XML document structured for UNESCO and 
+    international provenance registers. It formats ownership transfers, commissions, 
+    and acquisition events chronologically.
 
-    Transforms artifact provenance information into
-    a simplified XML document.
+    Implementation Style:
+    - Recursive template-matching style (<xsl:apply-templates>).
+    - Dereferences artist and period names via <xsl:key>.
+    ===================================================================
 -->
-
 <xsl:stylesheet version="1.0"
     xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
     xmlns:m="http://dsti.example/museum"
@@ -14,54 +22,40 @@
 
     <xsl:output method="xml" encoding="UTF-8" indent="yes"/>
 
+    <xsl:key name="artist-by-id" match="m:artist" use="@id"/>
+    <xsl:key name="period-by-id" match="m:period" use="@id"/>
+
     <xsl:template match="/">
-        <provenanceCatalog>
+        <provenanceExportRegister>
+            <exportHeader>
+                <institution><xsl:value-of select="m:museum/m:metadata/m:name"/></institution>
+                <totalArtifactsProcessed><xsl:value-of select="count(m:museum/m:artifacts/m:artifact)"/></totalArtifactsProcessed>
+            </exportHeader>
+            <artifactHistories>
+                <xsl:apply-templates select="m:museum/m:artifacts/m:artifact"/>
+            </artifactHistories>
+        </provenanceExportRegister>
+    </xsl:template>
 
-            <xsl:for-each select="m:museum/m:artifacts/m:artifact">
+    <xsl:template match="m:artifact">
+        <artifactProvenance id="{@id}">
+            <inventoryNumber><xsl:value-of select="m:inventoryNumber"/></inventoryNumber>
+            <title><xsl:value-of select="m:title"/></title>
+            <creator><xsl:value-of select="key('artist-by-id', m:artistRef)/m:name"/></creator>
+            <historicalPeriod><xsl:value-of select="key('period-by-id', m:historicalPeriodRef)/m:name"/></historicalPeriod>
+            <timeline>
+                <xsl:apply-templates select="m:provenance/m:event"/>
+            </timeline>
+        </artifactProvenance>
+    </xsl:template>
 
-                <artifact id="{@id}">
-
-                    <inventoryNumber>
-                        <xsl:value-of select="m:inventoryNumber"/>
-                    </inventoryNumber>
-
-                    <title>
-                        <xsl:value-of select="m:title"/>
-                    </title>
-
-                    <provenance>
-
-                        <xsl:for-each select="m:provenance/m:event">
-
-                            <event>
-
-                                <date>
-                                    <xsl:value-of select="m:date"/>
-                                </date>
-
-                                <type>
-                                    <xsl:value-of select="m:type"/>
-                                </type>
-
-                                <description>
-                                    <xsl:value-of select="normalize-space(m:description)"/>
-                                </description>
-
-                                <location>
-                                    <xsl:value-of select="normalize-space(m:location)"/>
-                                </location>
-
-                            </event>
-
-                        </xsl:for-each>
-
-                    </provenance>
-
-                </artifact>
-
-            </xsl:for-each>
-
-        </provenanceCatalog>
+    <xsl:template match="m:event">
+        <historicalEvent>
+            <date><xsl:value-of select="m:date"/></date>
+            <eventType><xsl:value-of select="m:type"/></eventType>
+            <location><xsl:value-of select="m:location"/></location>
+            <details><xsl:value-of select="normalize-space(m:description)"/></details>
+        </historicalEvent>
     </xsl:template>
 
 </xsl:stylesheet>

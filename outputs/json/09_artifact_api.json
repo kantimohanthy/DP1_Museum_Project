@@ -1,13 +1,18 @@
 
-
 {
+  "museum": {
+    "name": "European Museum of Cultural Heritage",
+    "location": "Paris, France",
+    "established": 1885
+  },
   "artifacts": [
     
-
     {
       "id": "A001",
+      "inventoryNumber": "INV-001",
       "title": "Portrait of a Renaissance Lady",
-      "year": 1490,
+      "creationYear": 1490,
+      "medium": "Oil on wood",
       "artist": {
         "id": "ART001",
         "name": "Leonardo da Vinci"
@@ -16,13 +21,16 @@
         "id": "C001",
         "name": "Renaissance Collection"
       },
-      "status": "on_display"
+      "period": "Renaissance",
+      "status": "on_display",
+      "location": "Main Museum — Gallery 1"
     },
-
     {
       "id": "A002",
+      "inventoryNumber": "INV-002",
       "title": "Marble Study",
-      "year": 1510,
+      "creationYear": 1510,
+      "medium": "Marble",
       "artist": {
         "id": "ART002",
         "name": "Michelangelo Buonarroti"
@@ -31,13 +39,16 @@
         "id": "C001",
         "name": "Renaissance Collection"
       },
-      "status": "on_display"
+      "period": "Renaissance",
+      "status": "on_display",
+      "location": "Main Museum — Gallery 2"
     },
-
     {
       "id": "A003",
+      "inventoryNumber": "INV-003",
       "title": "Madonna and Child",
-      "year": 1505,
+      "creationYear": 1505,
+      "medium": "Oil on panel",
       "artist": {
         "id": "ART003",
         "name": "Raphael"
@@ -46,13 +57,16 @@
         "id": "C001",
         "name": "Renaissance Collection"
       },
-      "status": "in_restoration"
+      "period": "Renaissance",
+      "status": "in_restoration",
+      "location": "Conservation Centre — Restoration Room 1"
     },
-
     {
       "id": "A004",
+      "inventoryNumber": "INV-004",
       "title": "The Calling of Saint Matthew",
-      "year": 1600,
+      "creationYear": 1600,
+      "medium": "Oil on canvas",
       "artist": {
         "id": "ART004",
         "name": "Caravaggio"
@@ -61,13 +75,16 @@
         "id": "C002",
         "name": "Baroque Collection"
       },
-      "status": "on_loan"
+      "period": "Baroque",
+      "status": "on_loan",
+      "location": "External Institution — Rome Partner Museum"
     },
-
     {
       "id": "A005",
+      "inventoryNumber": "INV-005",
       "title": "Portrait of a Merchant",
-      "year": 1635,
+      "creationYear": 1635,
+      "medium": "Oil on canvas",
       "artist": {
         "id": "ART005",
         "name": "Rembrandt van Rijn"
@@ -76,13 +93,16 @@
         "id": "C003",
         "name": "Dutch Masters Collection"
       },
-      "status": "on_display"
+      "period": "Baroque",
+      "status": "on_display",
+      "location": "Main Museum — Gallery 5"
     },
-
     {
       "id": "A006",
+      "inventoryNumber": "INV-006",
       "title": "Water Lilies",
-      "year": 1890,
+      "creationYear": 1890,
+      "medium": "Oil on canvas",
       "artist": {
         "id": "ART006",
         "name": "Claude Monet"
@@ -91,13 +111,16 @@
         "id": "C004",
         "name": "French Impressionist Collection"
       },
-      "status": "on_display"
+      "period": "Impressionism",
+      "status": "on_display",
+      "location": "Main Museum — Gallery 8"
     },
-
     {
       "id": "A007",
+      "inventoryNumber": "INV-007",
       "title": "Dance at Bougival",
-      "year": 1883,
+      "creationYear": 1883,
+      "medium": "Oil on canvas",
       "artist": {
         "id": "ART007",
         "name": "Pierre-Auguste Renoir"
@@ -106,13 +129,16 @@
         "id": "C004",
         "name": "French Impressionist Collection"
       },
-      "status": "on_display"
+      "period": "Impressionism",
+      "status": "on_display",
+      "location": "Main Museum — Gallery 8"
     },
-
     {
       "id": "A008",
+      "inventoryNumber": "INV-008",
       "title": "Modern Parisian Scene",
-      "year": 1875,
+      "creationYear": 1875,
+      "medium": "Oil on canvas",
       "artist": {
         "id": "ART008",
         "name": "Édouard Manet"
@@ -121,9 +147,10 @@
         "id": "C004",
         "name": "French Impressionist Collection"
       },
-      "status": "in_storage"
+      "period": "Impressionism",
+      "status": "in_storage",
+      "location": "Museum Storage — Storage Room 3"
     }
   ]
 }
-
     

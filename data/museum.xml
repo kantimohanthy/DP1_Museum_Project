@@ -274,6 +274,26 @@
                 <m:building>Main Museum</m:building>
                 <m:gallery>Gallery 1</m:gallery>
             </m:location>
+            <m:provenance>
+                <m:event>
+                    <m:date>1490</m:date>
+                    <m:type>Commission</m:type>
+                    <m:description>Commissioned by the Duke of Milan for the ducal palace.</m:description>
+                    <m:location>Milan, Italy</m:location>
+                </m:event>
+                <m:event>
+                    <m:date>1798</m:date>
+                    <m:type>Ownership Transfer</m:type>
+                    <m:description>Acquired by private European art collector Viscount Beauchamp.</m:description>
+                    <m:location>Paris, France</m:location>
+                </m:event>
+                <m:event>
+                    <m:date>1911-01-15</m:date>
+                    <m:type>Museum Acquisition</m:type>
+                    <m:description>Purchased by the European Museum of Cultural Heritage.</m:description>
+                    <m:location>Paris, France</m:location>
+                </m:event>
+            </m:provenance>
         </m:artifact>
 
         <m:artifact id="A002">
@@ -307,6 +327,20 @@
                 <m:building>Main Museum</m:building>
                 <m:gallery>Gallery 2</m:gallery>
             </m:location>
+            <m:provenance>
+                <m:event>
+                    <m:date>1510</m:date>
+                    <m:type>Creation</m:type>
+                    <m:description>Sculpted in the workshop of Michelangelo Buonarroti.</m:description>
+                    <m:location>Florence, Italy</m:location>
+                </m:event>
+                <m:event>
+                    <m:date>1920-05-12</m:date>
+                    <m:type>Donation</m:type>
+                    <m:description>Bequeathed to the museum by the Rossi Family Estate.</m:description>
+                    <m:location>Rome, Italy</m:location>
+                </m:event>
+            </m:provenance>
         </m:artifact>
 
         <m:artifact id="A003">
@@ -340,6 +374,26 @@
                 <m:building>Conservation Centre</m:building>
                 <m:gallery>Restoration Room 1</m:gallery>
             </m:location>
+            <m:provenance>
+                <m:event>
+                    <m:date>1505</m:date>
+                    <m:type>Commission</m:type>
+                    <m:description>Commissioned for a private chapel in Florence.</m:description>
+                    <m:location>Florence, Italy</m:location>
+                </m:event>
+                <m:event>
+                    <m:date>1850</m:date>
+                    <m:type>Exhibition</m:type>
+                    <m:description>Exhibited at the Royal Academy Summer Exhibition.</m:description>
+                    <m:location>London, United Kingdom</m:location>
+                </m:event>
+                <m:event>
+                    <m:date>1935-03-20</m:date>
+                    <m:type>Acquisition</m:type>
+                    <m:description>Purchased at Sotheby's auction by the museum.</m:description>
+                    <m:location>London, United Kingdom</m:location>
+                </m:event>
+            </m:provenance>
         </m:artifact>
 
         <m:artifact id="A004">
@@ -373,6 +427,20 @@
                 <m:building>External Institution</m:building>
                 <m:gallery>Rome Partner Museum</m:gallery>
             </m:location>
+            <m:provenance>
+                <m:event>
+                    <m:date>1600</m:date>
+                    <m:type>Commission</m:type>
+                    <m:description>Painted for the Contarelli Chapel in San Luigi dei Francesi.</m:description>
+                    <m:location>Rome, Italy</m:location>
+                </m:event>
+                <m:event>
+                    <m:date>1952-09-10</m:date>
+                    <m:type>Acquisition</m:type>
+                    <m:description>Acquired via international cultural exchange agreement.</m:description>
+                    <m:location>Rome, Italy</m:location>
+                </m:event>
+            </m:provenance>
         </m:artifact>
 
         <m:artifact id="A005">
@@ -406,6 +474,20 @@
                 <m:building>Main Museum</m:building>
                 <m:gallery>Gallery 5</m:gallery>
             </m:location>
+            <m:provenance>
+                <m:event>
+                    <m:date>1635</m:date>
+                    <m:type>Commission</m:type>
+                    <m:description>Commissioned by the Amsterdam Guild of Merchants.</m:description>
+                    <m:location>Amsterdam, Netherlands</m:location>
+                </m:event>
+                <m:event>
+                    <m:date>1964-04-18</m:date>
+                    <m:type>Acquisition</m:type>
+                    <m:description>Purchased from Van Der Meer Art Collection.</m:description>
+                    <m:location>Amsterdam, Netherlands</m:location>
+                </m:event>
+            </m:provenance>
         </m:artifact>
 
         <m:artifact id="A006">
@@ -439,6 +521,20 @@
                 <m:building>Main Museum</m:building>
                 <m:gallery>Gallery 8</m:gallery>
             </m:location>
+            <m:provenance>
+                <m:event>
+                    <m:date>1890</m:date>
+                    <m:type>Creation</m:type>
+                    <m:description>Painted en plein air at Giverny water garden.</m:description>
+                    <m:location>Giverny, France</m:location>
+                </m:event>
+                <m:event>
+                    <m:date>1972-06-05</m:date>
+                    <m:type>Acquisition</m:type>
+                    <m:description>Acquired directly from Monet family descendants.</m:description>
+                    <m:location>Paris, France</m:location>
+                </m:event>
+            </m:provenance>
         </m:artifact>
 
         <m:artifact id="A007">
@@ -472,6 +568,20 @@
                 <m:building>Main Museum</m:building>
                 <m:gallery>Gallery 8</m:gallery>
             </m:location>
+            <m:provenance>
+                <m:event>
+                    <m:date>1883</m:date>
+                    <m:type>Creation</m:type>
+                    <m:description>Painted for Paul Durand-Ruel exhibition.</m:description>
+                    <m:location>Paris, France</m:location>
+                </m:event>
+                <m:event>
+                    <m:date>1981-10-12</m:date>
+                    <m:type>Donation</m:type>
+                    <m:description>Donated by the French Cultural Heritage Foundation.</m:description>
+                    <m:location>Paris, France</m:location>
+                </m:event>
+            </m:provenance>
         </m:artifact>
 
         <m:artifact id="A008">
@@ -505,6 +615,20 @@
                 <m:building>Museum Storage</m:building>
                 <m:gallery>Storage Room 3</m:gallery>
             </m:location>
+            <m:provenance>
+                <m:event>
+                    <m:date>1875</m:date>
+                    <m:type>Creation</m:type>
+                    <m:description>Exhibited at the Impressionist Exhibition of 1876.</m:description>
+                    <m:location>Paris, France</m:location>
+                </m:event>
+                <m:event>
+                    <m:date>1990-02-14</m:date>
+                    <m:type>Acquisition</m:type>
+                    <m:description>Purchased from private Parisian estate.</m:description>
+                    <m:location>Paris, France</m:location>
+                </m:event>
+            </m:provenance>
         </m:artifact>
 
     </m:artifacts>

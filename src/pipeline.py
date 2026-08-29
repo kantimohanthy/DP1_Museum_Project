@@ -1,13 +1,17 @@
 """
-DP1 Museum Project - XML Processing Pipeline
+===================================================================
+S26 Data Pipeline Project - XML Processing Pipeline (lxml API)
+===================================================================
+Description:
+This Python program executes the primary XML processing pipeline:
+1. Loads the museum XML database (data/museum.xml).
+2. Validates the XML document against the XML Schema Definition (schema/museum.xsd).
+3. Discovers all 10 XSLT stylesheets under xslt/.
+4. Applies each stylesheet to generate transformed HTML, XML, JSON, and YAML files.
+5. Saves transformation results in the outputs/ directory.
 
-This program:
-1. Loads the museum XML database.
-2. Validates the XML document against the XML Schema.
-3. Discovers and applies XSLT stylesheets.
-4. Writes the generated transformation outputs.
-
-The implementation uses lxml XML APIs as required by the project.
+Author: Group S26
+===================================================================
 """
 
 from pathlib import Path
@@ -23,9 +27,13 @@ OUTPUT_ROOT = ROOT / "outputs"
 
 
 def validate_xml():
-    """Load and validate museum.xml against museum.xsd."""
-
+    """Loads and validates museum.xml against museum.xsd using lxml XML Schema APIs."""
     print("[1/3] Loading XML and XSD...")
+
+    if not XML_FILE.exists():
+        raise FileNotFoundError(f"XML file not found: {XML_FILE}")
+    if not XSD_FILE.exists():
+        raise FileNotFoundError(f"XSD schema file not found: {XSD_FILE}")
 
     xml_tree = etree.parse(str(XML_FILE))
     xsd_tree = etree.parse(str(XSD_FILE))
@@ -33,86 +41,65 @@ def validate_xml():
     schema = etree.XMLSchema(xsd_tree)
 
     if not schema.validate(xml_tree):
-        print("XML VALIDATION FAILED")
+        print("XML SCHEMA VALIDATION FAILED")
         for error in schema.error_log:
-            print(error)
+            print(f"  - Line {error.line}: {error.message}")
         raise SystemExit(1)
 
-    print("XML VALIDATION PASSED")
-
+    print("[OK] XML SCHEMA VALIDATION PASSED")
     return xml_tree
 
 
 def transform(xml_tree):
-    """Apply every XSLT stylesheet found under xslt/."""
+    """Discovers and applies every XSLT stylesheet under xslt/."""
+    print("[2/3] Applying XSLT Transformations...")
 
-    print("[2/3] Applying XSLT transformations...")
+    stylesheets = sorted(XSLT_ROOT.rglob("*.xsl"))
+    if not stylesheets:
+        raise RuntimeError("No XSLT stylesheets found in xslt/ directory.")
 
-    transformations = []
+    generated_files = []
 
-    for xslt_file in sorted(XSLT_ROOT.rglob("*.xsl")):
-        transformations.append(xslt_file)
-
-    if not transformations:
-        raise RuntimeError("No XSLT stylesheets were found.")
-
-    for xslt_file in transformations:
-
+    for xslt_file in stylesheets:
         relative = xslt_file.relative_to(XSLT_ROOT)
-
-        output_type = relative.parts[0]
+        output_type = relative.parts[0]  # html, xml, json, yaml
 
         output_dir = OUTPUT_ROOT / output_type
         output_dir.mkdir(parents=True, exist_ok=True)
 
-        stylesheet = etree.XSLT(etree.parse(str(xslt_file)))
-        result = stylesheet(xml_tree)
+        stylesheet_doc = etree.parse(str(xslt_file))
+        transform_fn = etree.XSLT(stylesheet_doc)
+        result = transform_fn(xml_tree)
 
         output_name = xslt_file.stem
-
-        if output_type == "html":
-            extension = ".html"
-        elif output_type == "xml":
-            extension = ".xml"
-        elif output_type == "json":
-            extension = ".json"
-        elif output_type == "yaml":
-            extension = ".yaml"
-        else:
-            extension = ".txt"
+        ext_map = {"html": ".html", "xml": ".xml", "json": ".json", "yaml": ".yaml"}
+        extension = ext_map.get(output_type, ".txt")
 
         output_file = output_dir / f"{output_name}{extension}"
 
-        with open(output_file, "wb") as file:
+        with open(output_file, "wb") as f:
             if output_type in ("json", "yaml"):
-                file.write(str(result).encode("UTF-8"))
+                f.write(str(result).encode("UTF-8"))
             else:
-                file.write(
-                    etree.tostring(
-                        result,
-                        encoding="UTF-8",
-                        pretty_print=True
-                    )
-                )
+                f.write(etree.tostring(result, encoding="UTF-8", pretty_print=True))
 
-        print(f"  Generated: {output_file.relative_to(ROOT)}")
+        print(f"  [OK] Generated ({output_type.upper()}): {output_file.relative_to(ROOT)}")
+        generated_files.append(output_file)
 
-    print("XSLT TRANSFORMATIONS PASSED")
+    print(f"[3/3] Successfully generated {len(generated_files)} transformation outputs.")
 
 
 def main():
-    """Execute the complete XML processing pipeline."""
-
-    print("=" * 60)
-    print("DP1 MUSEUM DATA PIPELINE")
-    print("=" * 60)
+    print("=" * 65)
+    print("S26 MUSEUM DATA PIPELINE — LXML XML PROCESSING")
+    print("=" * 65)
 
     xml_tree = validate_xml()
     transform(xml_tree)
 
-    print("=" * 60)
-    print("PIPELINE COMPLETED SUCCESSFULLY")
-    print("=" * 60)
+    print("=" * 65)
+    print("PIPELINE EXECUTION COMPLETED SUCCESSFULLY")
+    print("=" * 65)
 
 
 if __name__ == "__main__":
